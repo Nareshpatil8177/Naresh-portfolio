@@ -18,10 +18,19 @@
       background-color: #161b22;
       padding: 20px;
       text-align: center;
+      position: relative;
     }
     header h1 {
       margin: 0;
       font-size: 2.5rem;
+    }
+    header img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #58a6ff;
+      margin-bottom: 10px;
     }
     .buttons a {
       margin: 10px;
@@ -52,6 +61,11 @@
       border-radius: 10px;
       flex: 1 1 calc(30% - 20px);
       min-width: 250px;
+      transition: transform 0.2s;
+    }
+    .skill:hover, .project-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 20px rgba(88, 166, 255, 0.2);
     }
     .dark-toggle {
       position: fixed;
@@ -73,12 +87,13 @@
 <body>
   <button class="dark-toggle" onclick="toggleTheme()">Toggle Theme</button>
   <header>
+    <img src="your-photo.jpg" alt="Profile Picture" />
     <h1>Naresh Khanderay</h1>
     <p>Mumbai | Aspiring Data Scientist | Big Data & ML Enthusiast</p>
     <div class="buttons">
-      <a href="https://github.com/nareshpatil8177" target="_blank">GitHub</a>
-      <a href="https://linkedin.com/in/nareshpatil8177" target="_blank">LinkedIn</a>
-      <a href="/resume.pdf" download>Download Resume</a>
+      <a href="https://github.com/nareshpatil8177" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+      <a href="https://www.linkedin.com/in/naresh-khanderay-156b82157/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+      <a href="Naresh_Khanderay_Resume_resume.pdf" download><i class="fas fa-file-download"></i> Resume</a>
     </div>
   </header>
 
