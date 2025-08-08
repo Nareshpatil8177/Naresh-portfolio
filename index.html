@@ -60,15 +60,19 @@ body {
 .timeline-item {
   margin-bottom: 1.5rem;
 }
-.btn-accent {
-  background: linear-gradient(90deg,#06b6d4,#3b82f6);
-  border: none;
-  color: white;
-}
 footer {
   padding: 2rem 0;
   text-align: center;
   color: #94a3b8;
+}
+.contact-icons a {
+  font-size: 1.5rem;
+  margin: 0 10px;
+  color: #06b6d4;
+  transition: color 0.3s ease;
+}
+.contact-icons a:hover {
+  color: #3b82f6;
 }
 </style>
 </head>
@@ -83,7 +87,7 @@ footer {
         <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
         <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
         <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
-        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Get in Touch</a></li>
       </ul>
     </div>
   </div>
@@ -93,12 +97,11 @@ footer {
   <img src="assets/naresh-profile.jpg" alt="Naresh Photo">
   <h1>Naresh Ramesh Khanderay</h1>
   <p>Data Analyst | Big Data Specialist | Predictive Model Builder</p>
-  <a href="Naresh-Resume.pdf" class="btn btn-accent mt-3" download><i class="fa-solid fa-download me-2"></i>Download Resume</a>
 </section>
 
 <section id="about" class="container py-5">
   <h2 class="section-title">About Me</h2>
-  <p>Entry-level Data Analyst skilled in Python, R, SQL, Apache Spark, Hive, Hadoop, Power BI, and Tableau. Experienced in ETL pipelines, data cleaning, predictive modeling, KPI reporting, and dashboard development. Delivered a sales forecasting model with 85% accuracy and sentiment analysis with 92% precision using real-world datasets.</p>
+  <p>Entry-level Data Analyst skilled in Python, R, SQL, Apache Spark, Hive, Hadoop, Power BI, and Tableau. Experienced in ETL pipelines, data cleaning, predictive modeling, KPI reporting, and dashboard development. Delivered sales forecasting and sentiment analysis models with high accuracy using real-world datasets.</p>
 </section>
 
 <section id="skills" class="container py-5">
@@ -136,12 +139,15 @@ footer {
   </div>
 </section>
 
-<section id="contact" class="container py-5">
-  <h2 class="section-title">Contact</h2>
-  <p><i class="fa-solid fa-envelope me-2"></i><a href="mailto:nareshpatil8177@gmail.com" class="text-light">nareshpatil8177@gmail.com</a></p>
-  <p><i class="fa-solid fa-phone me-2"></i>+91-8999100235</p>
-  <p><i class="fa-brands fa-linkedin me-2"></i><a href="https://www.linkedin.com/in/naresh-khanderay-156b82157/" class="text-light">LinkedIn</a></p>
-  <p><i class="fa-brands fa-github me-2"></i><a href="https://github.com/Nareshpatil8177-github" class="text-light">GitHub</a></p>
+<section id="contact" class="container py-5 text-center">
+  <h2 class="section-title">Get in Touch</h2>
+  <p>I’d love to hear from you! Whether you have a project, a question, or just want to connect, feel free to reach out.</p>
+  <div class="contact-icons">
+    <a href="mailto:nareshpatil8177@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+    <a href="tel:+918999100235"><i class="fa-solid fa-phone"></i></a>
+    <a href="https://www.linkedin.com/in/naresh-khanderay-156b82157/"><i class="fa-brands fa-linkedin"></i></a>
+    <a href="https://github.com/Nareshpatil8177-github"><i class="fa-brands fa-github"></i></a>
+  </div>
 </section>
 
 <footer>
