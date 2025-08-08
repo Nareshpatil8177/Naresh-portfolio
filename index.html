@@ -3,72 +3,65 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Naresh Ramesh Khanderay - Data Analyst Portfolio</title>
+<title>Naresh R. Khanderay | Data Analyst Portfolio</title>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 <style>
 body {
-  background: linear-gradient(135deg, #0f172a, #1e293b);
+  background: linear-gradient(135deg, #0f172a, #1e3a8a);
   color: #e2e8f0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Segoe UI', sans-serif;
 }
 .navbar {
-  background: rgba(15, 23, 42, 0.8);
-  backdrop-filter: blur(10px);
+  background: rgba(15, 23, 42, 0.9);
+  backdrop-filter: blur(8px);
 }
-.hero {
+.hero-section {
   text-align: center;
   padding: 4rem 1rem;
 }
-.hero img {
-  width: 160px;
-  height: 160px;
-  object-fit: cover;
+.hero-section img {
+  width: 170px;
+  height: 170px;
   border-radius: 50%;
-  border: 4px solid #14b8a6;
-  box-shadow: 0 8px 25px rgba(0,0,0,0.5);
+  object-fit: cover;
+  border: 4px solid #06b6d4;
 }
-.hero h1 {
-  font-size: 2.5rem;
-  font-weight: bold;
+.hero-section h1 {
   margin-top: 1rem;
-}
-.hero p {
-  color: #94a3b8;
+  font-size: 2.5rem;
 }
 .section-title {
   font-size: 2rem;
-  border-bottom: 2px solid #14b8a6;
+  border-bottom: 2px solid #06b6d4;
   display: inline-block;
   margin-bottom: 1.5rem;
 }
 .badge-skill {
-  background: rgba(20,184,166,0.15);
-  border: 1px solid #14b8a6;
-  color: #14b8a6;
+  background: rgba(6,182,212,0.15);
+  border: 1px solid #06b6d4;
+  color: #06b6d4;
   margin: 0.25rem;
   font-size: 0.9rem;
 }
 .project-card {
   background: rgba(255,255,255,0.05);
-  border: none;
   border-radius: 10px;
   padding: 1rem;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease;
 }
 .project-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.5);
 }
 .timeline {
-  border-left: 2px solid #14b8a6;
+  border-left: 2px solid #06b6d4;
   padding-left: 1rem;
 }
 .timeline-item {
   margin-bottom: 1.5rem;
 }
 .btn-accent {
-  background: linear-gradient(90deg,#14b8a6,#06b6d4);
+  background: linear-gradient(90deg,#06b6d4,#3b82f6);
   border: none;
   color: white;
 }
@@ -76,18 +69,15 @@ footer {
   padding: 2rem 0;
   text-align: center;
   color: #94a3b8;
-  font-size: 0.9rem;
 }
 </style>
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+<nav class="navbar navbar-expand-lg navbar-dark">
   <div class="container">
     <a class="navbar-brand fw-bold" href="#">Naresh Khanderay</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navmenu">
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu"><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="navMenu">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
         <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
@@ -99,7 +89,7 @@ footer {
   </div>
 </nav>
 
-<section class="hero">
+<section class="hero-section">
   <img src="assets/naresh-profile.jpg" alt="Naresh Photo">
   <h1>Naresh Ramesh Khanderay</h1>
   <p>Data Analyst | Big Data Specialist | Predictive Model Builder</p>
@@ -108,15 +98,15 @@ footer {
 
 <section id="about" class="container py-5">
   <h2 class="section-title">About Me</h2>
-  <p>Entry-level Data Analyst with strong skills in statistics, big data analytics, SQL, Python, R, and data visualization tools. Experienced in ETL processes, data cleaning, transformation, predictive modeling, KPI reporting, and dashboard development. Adept at delivering actionable business insights using tools such as Power BI, Tableau, Apache Spark, and Hive.</p>
+  <p>Entry-level Data Analyst skilled in Python, R, SQL, Apache Spark, Hive, Hadoop, Power BI, and Tableau. Experienced in ETL pipelines, data cleaning, predictive modeling, KPI reporting, and dashboard development. Delivered a sales forecasting model with 85% accuracy and sentiment analysis with 92% precision using real-world datasets.</p>
 </section>
 
 <section id="skills" class="container py-5">
   <h2 class="section-title">Skills</h2>
   <div>
     <span class="badge badge-skill">Python</span>
-    <span class="badge badge-skill">SQL</span>
     <span class="badge badge-skill">R</span>
+    <span class="badge badge-skill">SQL</span>
     <span class="badge badge-skill">Apache Spark</span>
     <span class="badge badge-skill">Hive</span>
     <span class="badge badge-skill">Hadoop</span>
@@ -130,57 +120,33 @@ footer {
 <section id="projects" class="container py-5">
   <h2 class="section-title">Projects</h2>
   <div class="row g-4">
-    <div class="col-md-4">
-      <div class="project-card">
-        <h5>Olist E-Commerce Analysis</h5>
-        <p>Analyzed 100k+ orders to identify sales patterns and delivery performance. Developed a sales prediction model with 85% accuracy and a sentiment classification model achieving 92% precision.</p>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="project-card">
-        <h5>Attitude of Students Towards Entrepreneurship</h5>
-        <p>Survey analysis of 300+ students using SPSS and Excel. Applied statistical modeling to identify entrepreneurial motivators.</p>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="project-card">
-        <h5>Statistical Analysis of Stock Market</h5>
-        <p>Evaluated 5 years of historical stock data using R. Created visual analytics reports to identify trends and seasonal patterns.</p>
-      </div>
-    </div>
+    <div class="col-md-6 col-lg-4"><div class="project-card"><h5>Olist E-Commerce Analysis</h5><p>Analyzed 100k+ orders to identify sales patterns and delivery performance. Built forecasting and sentiment models with high accuracy.</p></div></div>
+    <div class="col-md-6 col-lg-4"><div class="project-card"><h5>Hotel Booking Analysis</h5><p>EDA to reveal booking trends and cancellation patterns using Python, Pandas, and Seaborn.</p></div></div>
+    <div class="col-md-6 col-lg-4"><div class="project-card"><h5>Stock Market Analysis</h5><p>Analyzed 5 years of data using R, detecting trends and seasonality for investment strategy.</p></div></div>
+    <div class="col-md-6 col-lg-4"><div class="project-card"><h5>Entrepreneurship Survey</h5><p>Analyzed survey data from 300+ students using SPSS and Excel to identify key motivators.</p></div></div>
   </div>
 </section>
 
 <section id="education" class="container py-5">
   <h2 class="section-title">Education</h2>
   <div class="timeline">
-    <div class="timeline-item">
-      <h6>PG Diploma in Big Data Analytics</h6>
-      <p class="text-muted">2025 - CDAC Kharghar</p>
-    </div>
-    <div class="timeline-item">
-      <h6>MSc in Statistics</h6>
-      <p class="text-muted">2024 - Z.B. Patil College, Dhule</p>
-    </div>
-    <div class="timeline-item">
-      <h6>BSc in Statistics</h6>
-      <p class="text-muted">2022 - Z.B. Patil College, Dhule</p>
-    </div>
+    <div class="timeline-item"><h6>PG Diploma in Big Data Analytics</h6><p class="text-muted">2025 - CDAC Kharghar</p></div>
+    <div class="timeline-item"><h6>MSc in Statistics</h6><p class="text-muted">2024 - Z.B. Patil College, Dhule</p></div>
+    <div class="timeline-item"><h6>BSc in Statistics</h6><p class="text-muted">2022 - Z.B. Patil College, Dhule</p></div>
   </div>
 </section>
 
 <section id="contact" class="container py-5">
   <h2 class="section-title">Contact</h2>
-  <p><i class="fa-solid fa-envelope me-2"></i><a href="mailto:nareshpatil8177@gmail.com" class="text-decoration-none text-light">nareshpatil8177@gmail.com</a></p>
+  <p><i class="fa-solid fa-envelope me-2"></i><a href="mailto:nareshpatil8177@gmail.com" class="text-light">nareshpatil8177@gmail.com</a></p>
   <p><i class="fa-solid fa-phone me-2"></i>+91-8999100235</p>
-  <p><i class="fa-brands fa-linkedin me-2"></i><a href="https://www.linkedin.com/in/naresh-khanderay-156b82157/" class="text-decoration-none text-light">LinkedIn</a></p>
-  <p><i class="fa-brands fa-github me-2"></i><a href="https://github.com/Nareshpatil8177-github" class="text-decoration-none text-light">GitHub</a></p>
+  <p><i class="fa-brands fa-linkedin me-2"></i><a href="https://www.linkedin.com/in/naresh-khanderay-156b82157/" class="text-light">LinkedIn</a></p>
+  <p><i class="fa-brands fa-github me-2"></i><a href="https://github.com/Nareshpatil8177-github" class="text-light">GitHub</a></p>
 </section>
 
 <footer>
-  <p>© 2025 Naresh Ramesh Khanderay. All rights reserved.</p>
+  <p>© 2025 Naresh R. Khanderay. Built with passion for data.</p>
 </footer>
-
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
