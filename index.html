@@ -1,276 +1,186 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Naresh R. Khanderay — Data Analyst Portfolio</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-  <style>
-    :root{--accent:#0066cc;--muted:#6b7280;--glass: rgba(255,255,255,0.06);--card-bg: rgba(255,255,255,0.03)}
-    body{background: linear-gradient(180deg,#071029 0%, #081226 60%);color:#e6eef8;font-family:Inter,system-ui,Segoe UI,Roboto,'Helvetica Neue',Arial;}
-    .container-lg{padding-top:3.5rem;padding-bottom:3.5rem}
-    .hero{padding:3.5rem 0;text-align:center}
-    .hero .profile{width:140px;height:140px;border-radius:50%;object-fit:cover;border:4px solid rgba(255,255,255,0.06);box-shadow:0 8px 30px rgba(0,0,0,0.6)}
-    .glass{background:linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.02));border-radius:14px;padding:1.25rem;border:1px solid rgba(255,255,255,0.04)}
-    .accent{color:var(--accent)}
-    .typed {font-weight:600}
-    .skills .badge{margin:4px 6px 6px 0;background:transparent;border:1px solid rgba(255,255,255,0.06);color:#cfe7ff}
-    .progress {height:10px;background:rgba(255,255,255,0.03)}
-    .project-card{transition:transform .22s ease, box-shadow .22s;cursor:default}
-    .project-card:hover{transform:translateY(-6px);box-shadow:0 18px 50px rgba(2,6,23,0.6)}
-    footer{color:var(--muted);font-size:0.95rem}
-    .nav-link{color:#cfe7ff}
-    .download-btn{background:linear-gradient(90deg,var(--accent),#00a3ff);border:none}
-    @media (max-width:768px){.hero{padding:2rem 0}.hero h1{font-size:1.6rem}}
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Naresh Ramesh Khanderay - Data Analyst Portfolio</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+<style>
+body {
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: #e2e8f0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.navbar {
+  background: rgba(15, 23, 42, 0.8);
+  backdrop-filter: blur(10px);
+}
+.hero {
+  text-align: center;
+  padding: 4rem 1rem;
+}
+.hero img {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #14b8a6;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.5);
+}
+.hero h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+.hero p {
+  color: #94a3b8;
+}
+.section-title {
+  font-size: 2rem;
+  border-bottom: 2px solid #14b8a6;
+  display: inline-block;
+  margin-bottom: 1.5rem;
+}
+.badge-skill {
+  background: rgba(20,184,166,0.15);
+  border: 1px solid #14b8a6;
+  color: #14b8a6;
+  margin: 0.25rem;
+  font-size: 0.9rem;
+}
+.project-card {
+  background: rgba(255,255,255,0.05);
+  border: none;
+  border-radius: 10px;
+  padding: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+}
+.timeline {
+  border-left: 2px solid #14b8a6;
+  padding-left: 1rem;
+}
+.timeline-item {
+  margin-bottom: 1.5rem;
+}
+.btn-accent {
+  background: linear-gradient(90deg,#14b8a6,#06b6d4);
+  border: none;
+  color: white;
+}
+footer {
+  padding: 2rem 0;
+  text-align: center;
+  color: #94a3b8;
+  font-size: 0.9rem;
+}
+</style>
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-dark bg-transparent py-3">
-  <div class="container-lg">
-    <a class="navbar-brand d-flex align-items-center" href="#home"><div class="me-2" style="width:44px;height:44px;border-radius:8px;background:linear-gradient(135deg,var(--accent),#00a3ff)"></div><span class="fw-bold">Naresh Khanderay</span></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"><span class="navbar-toggler-icon"></span></button>
-    <div class="collapse navbar-collapse" id="navMenu">
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">Naresh Khanderay</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navmenu">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
         <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-        <li class="nav-item"><a class="nav-link" href="#resume">Resume</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
         <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
       </ul>
     </div>
   </div>
 </nav>
 
-<main class="container-lg">
-  <section id="home" class="hero">
-    <img src="assets/profile-placeholder.png" alt="Naresh Profile" class="profile mb-3" onerror="this.style.display='none'">
-    <h1 class="mb-1">Naresh Ramesh Khanderay</h1>
-    <p class="mb-1 text-muted">MSc (Statistics) • PG Diploma in Big Data Analytics</p>
-    <p class="lead mb-2">Data Analyst • Big Data • Predictive Modeling</p>
-    <p class="typed" id="typed"></p>
-    <div class="d-flex justify-content-center gap-2 mt-3">
-      <a class="btn download-btn text-white" href="/mnt/data/Naresh_Khanderay_Resume_ATS_90plus_Final.pdf" download><i class="fa-solid fa-download me-2"></i>Download ATS Resume</a>
-      <a class="btn btn-outline-light" href="#projects">See Projects</a>
-    </div>
-    <div class="mt-3" aria-hidden="true">
-      <a class="text-decoration-none text-muted me-3" href="#contact"><i class="fa-brands fa-linkedin fa-lg"></i></a>
-      <a class="text-decoration-none text-muted me-3" href="#"><i class="fa-brands fa-github fa-lg"></i></a>
-      <a class="text-decoration-none text-muted" href="mailto:nareshpatil8177@gmail.com"><i class="fa-solid fa-envelope fa-lg"></i></a>
-    </div>
-  </section>
+<section class="hero">
+  <img src="assets/naresh-profile.jpg" alt="Naresh Photo">
+  <h1>Naresh Ramesh Khanderay</h1>
+  <p>Data Analyst | Big Data Specialist | Predictive Model Builder</p>
+  <a href="Naresh-Resume.pdf" class="btn btn-accent mt-3" download><i class="fa-solid fa-download me-2"></i>Download Resume</a>
+</section>
 
-  <section id="about" class="mb-5">
-    <div class="row g-4">
-      <div class="col-lg-7">
-        <div class="glass">
-          <h2 class="mb-2">About</h2>
-          <p style="color:#cfe7ff">I transform raw data into clear, actionable insights. I specialize in <strong>ETL, Big Data (Spark & Hive), predictive modeling, and dashboarding (Power BI / Tableau)</strong>. I built a sales forecasting model achieving <strong>~85% accuracy</strong> and an NLP sentiment classifier with <strong>92% precision</strong> while working on large e‑commerce datasets.</p>
-          <ul class="mt-3">
-            <li><strong>Core strengths:</strong> Data cleaning, feature engineering, SQL optimization, model evaluation, and visualization.</li>
-            <li><strong>Tools:</strong> Python, R, SQL, Spark, Hive, Hadoop, Power BI, Tableau, Scikit‑learn, Hugging Face</li>
-            <li><strong>Domain:</strong> E‑commerce analytics, delivery performance, customer sentiment, time‑series forecasting</li>
-          </ul>
-        </div>
-        <div class="glass mt-3 p-3">
-          <h4 class="mb-2">Education</h4>
-          <div class="d-flex justify-content-between">
-            <div>
-              <strong>PG Diploma — Big Data Analytics</strong><br><small class="text-muted">CDAC Kharghar — 2025</small>
-            </div>
-            <div class="text-muted">Relevant: PySpark, Hive, HDFS, ML</div>
-          </div>
-          <hr class="my-2">
-          <div class="d-flex justify-content-between">
-            <div>
-              <strong>MSc — Statistics</strong><br><small class="text-muted">Z. B. Patil College — 2024</small>
-            </div>
-            <div class="text-muted">Thesis & statistical modeling</div>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-5">
-        <div class="glass p-3 mb-3">
-          <h4 class="mb-2">Quick Stats</h4>
-          <div class="mb-2"><strong>Projects completed</strong><div class="text-muted">10+</div></div>
-          <div class="mb-2"><strong>Tools & Tech</strong><div class="text-muted">Spark, Hive, Power BI, Python</div></div>
-          <div class="mb-2"><strong>Languages</strong><div class="text-muted">English, Hindi, Marathi</div></div>
-        </div>
-        <div class="glass p-3">
-          <h4 class="mb-2">Certifications</h4>
-          <ul class="mb-0">
-            <li>SQL for Data Science — Coursera (Completed)</li>
-            <li>Microsoft Power BI for Data Analysis — Coursera (In progress)</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
+<section id="about" class="container py-5">
+  <h2 class="section-title">About Me</h2>
+  <p>Entry-level Data Analyst with strong skills in statistics, big data analytics, SQL, Python, R, and data visualization tools. Experienced in ETL processes, data cleaning, transformation, predictive modeling, KPI reporting, and dashboard development. Adept at delivering actionable business insights using tools such as Power BI, Tableau, Apache Spark, and Hive.</p>
+</section>
 
-  <section id="projects" class="mb-5">
-    <h2 class="mb-3">Selected Projects</h2>
-    <div class="row g-4">
-      <div class="col-md-6 col-lg-4">
-        <article class="project-card glass p-3 h-100">
-          <h5>Olist E‑Commerce Analysis</h5>
-          <p class="text-muted small">Tools: Spark, Hive, Python, Power BI</p>
-          <p>Analyzed 100k+ orders to build a sales forecasting model (~85% accuracy) and a sentiment classifier (92% precision). Built interactive Power BI dashboards for revenue and delivery KPIs.</p>
-          <div class="mt-auto d-flex justify-content-between align-items-center">
-            <a href="#" class="btn btn-sm btn-outline-light">View details</a>
-            <small class="text-muted">2024</small>
-          </div>
-        </article>
-      </div>
-
-      <div class="col-md-6 col-lg-4">
-        <article class="project-card glass p-3 h-100">
-          <h5>Hotel Booking Analysis</h5>
-          <p class="text-muted small">Tools: Python, Pandas, Seaborn</p>
-          <p>Performed EDA to uncover booking & cancellation patterns and provided recommendations to optimize booking strategies.</p>
-          <div class="mt-auto d-flex justify-content-between align-items-center">
-            <a href="#" class="btn btn-sm btn-outline-light">View notebook</a>
-            <small class="text-muted">2024</small>
-          </div>
-        </article>
-      </div>
-
-      <div class="col-md-6 col-lg-4">
-        <article class="project-card glass p-3 h-100">
-          <h5>Sentiment Classification (Hugging Face)</h5>
-          <p class="text-muted small">Tools: Python, Hugging Face, NLP</p>
-          <p>Built a sentiment classifier for customer reviews achieving 92% precision. Used transfer learning and custom preprocessing to improve real-world performance.</p>
-          <div class="mt-auto d-flex justify-content-between align-items-center">
-            <a href="#" class="btn btn-sm btn-outline-light">Read paper</a>
-            <small class="text-muted">2024</small>
-          </div>
-        </article>
-      </div>
-
-      <div class="col-md-6 col-lg-4">
-        <article class="project-card glass p-3 h-100">
-          <h5>Stock Market Analysis</h5>
-          <p class="text-muted small">Tools: R, ggplot2</p>
-          <p>Analyzed 5 years of historical data to detect trends and seasonality, proposing rules for a quantitative investment strategy.</p>
-          <div class="mt-auto d-flex justify-content-between align-items-center">
-            <a href="#" class="btn btn-sm btn-outline-light">Explore</a>
-            <small class="text-muted">2023</small>
-          </div>
-        </article>
-      </div>
-
-      <div class="col-md-6 col-lg-4">
-        <article class="project-card glass p-3 h-100">
-          <h5>Student Entrepreneurship Survey</h5>
-          <p class="text-muted small">Tools: SPSS, Excel</p>
-          <p>Survey analysis of 300+ students. Applied hypothesis testing and correlation analysis to identify entrepreneurial motivators.</p>
-          <div class="mt-auto d-flex justify-content-between align-items-center">
-            <a href="#" class="btn btn-sm btn-outline-light">Summary</a>
-            <small class="text-muted">2022</small>
-          </div>
-        </article>
-      </div>
-
-    </div>
-  </section>
-
-  <section id="skills" class="mb-5">
-    <h2 class="mb-3">Skills</h2>
-    <div class="row g-4">
-      <div class="col-md-6">
-        <div class="glass p-3">
-          <h5>Technical</h5>
-          <div class="skills mt-2">
-            <span class="badge">Python</span>
-            <span class="badge">SQL</span>
-            <span class="badge">Spark</span>
-            <span class="badge">Hive</span>
-            <span class="badge">Power BI</span>
-            <span class="badge">Tableau</span>
-            <span class="badge">R</span>
-            <span class="badge">Scikit-learn</span>
-          </div>
-          <hr>
-          <div class="mt-2">
-            <div class="mb-2 small text-muted">Python <span class="float-end">92%</span></div>
-            <div class="progress mb-3"><div class="progress-bar" role="progressbar" style="width:92%"></div></div>
-            <div class="mb-2 small text-muted">SQL <span class="float-end">85%</span></div>
-            <div class="progress mb-3"><div class="progress-bar" role="progressbar" style="width:85%"></div></div>
-            <div class="mb-2 small text-muted">Spark & Big Data <span class="float-end">80%</span></div>
-            <div class="progress"><div class="progress-bar" role="progressbar" style="width:80%"></div></div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <div class="glass p-3">
-          <h5>Soft Skills</h5>
-          <ul>
-            <li>Communication & Presentation</li>
-            <li>Problem Solving & Critical Thinking</li>
-            <li>Team Collaboration</li>
-            <li>Time Management</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="resume" class="mb-5">
-    <div class="row">
-      <div class="col-lg-8">
-        <div class="glass p-4">
-          <h2>Resume</h2>
-          <p class="text-muted">ATS-optimized resume available for download. Click the button to download the original PDF (ready to send to recruiters).</p>
-          <a class="btn download-btn text-white" href="/mnt/data/Naresh_Khanderay_Resume_ATS_90plus_Final.pdf" download><i class="fa-solid fa-file-arrow-down me-2"></i>Download Resume (PDF)</a>
-        </div>
-      </div>
-      <div class="col-lg-4">
-        <div class="glass p-3">
-          <h5>Contact</h5>
-          <p class="mb-1"><i class="fa-solid fa-envelope me-2"></i>nareshpatil8177@gmail.com</p>
-          <p class="mb-1"><i class="fa-solid fa-phone me-2"></i>+91-8999100235</p>
-          <p class="mb-1"><i class="fa-solid fa-location-dot me-2"></i>Dhule, Maharashtra, India</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="contact" class="mb-5">
-    <div class="glass p-4">
-      <h3>Get in touch</h3>
-      <form onsubmit="event.preventDefault();alert('Thanks — message simulated (this is a static demo).');">
-        <div class="row g-2">
-          <div class="col-md-4"><input class="form-control bg-transparent text-light" placeholder="Name" required></div>
-          <div class="col-md-4"><input class="form-control bg-transparent text-light" placeholder="Email" required></div>
-          <div class="col-md-4"><input class="form-control bg-transparent text-light" placeholder="Subject"></div>
-          <div class="col-12 mt-2"><textarea class="form-control bg-transparent text-light" rows="3" placeholder="Message" required></textarea></div>
-          <div class="col-12 mt-2 text-end"><button class="btn download-btn">Send</button></div>
-        </div>
-      </form>
-    </div>
-  </section>
-
-</main>
-
-<footer class="py-4 text-center">
-  <div class="container-lg">
-    <div>© 2025 Naresh R. Khanderay — Built with passion for data</div>
+<section id="skills" class="container py-5">
+  <h2 class="section-title">Skills</h2>
+  <div>
+    <span class="badge badge-skill">Python</span>
+    <span class="badge badge-skill">SQL</span>
+    <span class="badge badge-skill">R</span>
+    <span class="badge badge-skill">Apache Spark</span>
+    <span class="badge badge-skill">Hive</span>
+    <span class="badge badge-skill">Hadoop</span>
+    <span class="badge badge-skill">Power BI</span>
+    <span class="badge badge-skill">Tableau</span>
+    <span class="badge badge-skill">SPSS</span>
+    <span class="badge badge-skill">Excel</span>
   </div>
+</section>
+
+<section id="projects" class="container py-5">
+  <h2 class="section-title">Projects</h2>
+  <div class="row g-4">
+    <div class="col-md-4">
+      <div class="project-card">
+        <h5>Olist E-Commerce Analysis</h5>
+        <p>Analyzed 100k+ orders to identify sales patterns and delivery performance. Developed a sales prediction model with 85% accuracy and a sentiment classification model achieving 92% precision.</p>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="project-card">
+        <h5>Attitude of Students Towards Entrepreneurship</h5>
+        <p>Survey analysis of 300+ students using SPSS and Excel. Applied statistical modeling to identify entrepreneurial motivators.</p>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="project-card">
+        <h5>Statistical Analysis of Stock Market</h5>
+        <p>Evaluated 5 years of historical stock data using R. Created visual analytics reports to identify trends and seasonal patterns.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="education" class="container py-5">
+  <h2 class="section-title">Education</h2>
+  <div class="timeline">
+    <div class="timeline-item">
+      <h6>PG Diploma in Big Data Analytics</h6>
+      <p class="text-muted">2025 - CDAC Kharghar</p>
+    </div>
+    <div class="timeline-item">
+      <h6>MSc in Statistics</h6>
+      <p class="text-muted">2024 - Z.B. Patil College, Dhule</p>
+    </div>
+    <div class="timeline-item">
+      <h6>BSc in Statistics</h6>
+      <p class="text-muted">2022 - Z.B. Patil College, Dhule</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="container py-5">
+  <h2 class="section-title">Contact</h2>
+  <p><i class="fa-solid fa-envelope me-2"></i><a href="mailto:nareshpatil8177@gmail.com" class="text-decoration-none text-light">nareshpatil8177@gmail.com</a></p>
+  <p><i class="fa-solid fa-phone me-2"></i>+91-8999100235</p>
+  <p><i class="fa-brands fa-linkedin me-2"></i><a href="https://www.linkedin.com/in/naresh-khanderay-156b82157/" class="text-decoration-none text-light">LinkedIn</a></p>
+  <p><i class="fa-brands fa-github me-2"></i><a href="https://github.com/Nareshpatil8177-github" class="text-decoration-none text-light">GitHub</a></p>
+</section>
+
+<footer>
+  <p>© 2025 Naresh Ramesh Khanderay. All rights reserved.</p>
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-<script>
-  // small typed-effect
-  const words = ['Data Analyst', 'Big Data Specialist', 'Predictive Model Builder', 'Dashboard Developer'];
-  let i=0; let pos=0; let forward=true; const el = document.getElementById('typed');
-  function tick(){
-    const w = words[i];
-    if(forward){ pos++; if(pos> w.length){ forward=false; setTimeout(tick,900); return } }
-    else{ pos--; if(pos<0){ forward=true; i=(i+1)%words.length; } }
-    if(el) el.textContent = w.slice(0,pos);
-    setTimeout(tick, forward?80:40);
-  }
-  tick();
-</script>
 </body>
 </html>
-
