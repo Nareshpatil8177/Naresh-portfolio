@@ -8,15 +8,16 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 <style>
 body {
-    background-color: #121212;
+    background-color: #0d0d0d;
     color: #e0e0e0;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
 }
 .navbar {
-    background-color: rgba(18, 18, 18, 0.85);
+    background-color: rgba(13, 13, 13, 0.9);
     backdrop-filter: blur(8px);
 }
 .hero-section {
@@ -28,91 +29,94 @@ body {
     height: 180px;
     border-radius: 50%;
     object-fit: cover;
-    border: 4px solid #00f260;
-    box-shadow: 0 0 20px rgba(0, 242, 96, 0.3);
+    border: 5px solid #ff7f00;
+    box-shadow: 0 0 25px rgba(255, 127, 0, 0.5);
 }
 .hero-section h1 {
     margin-top: 1.5rem;
-    font-size: 3rem;
+    font-size: 3.2rem;
     font-weight: 700;
     color: #ffffff;
 }
 .hero-section p {
-    font-size: 1.25rem;
+    font-size: 1.35rem;
     color: #a0a0a0;
 }
 .section-title {
-    font-size: 2.2rem;
-    font-weight: 600;
+    font-size: 2.5rem;
+    font-weight: 700;
     color: #ffffff;
-    border-bottom: 3px solid #00f260;
+    border-bottom: 4px solid #ff7f00;
     display: inline-block;
     padding-bottom: 0.5rem;
-    margin-bottom: 2.5rem;
+    margin-bottom: 3rem;
 }
 .badge-skill {
-    background-color: rgba(0, 242, 96, 0.1);
-    border: 1px solid #00f260;
-    color: #00f260;
-    margin: 0.3rem;
-    font-size: 1rem;
+    background-color: rgba(255, 127, 0, 0.1);
+    border: 1px solid #ff7f00;
+    color: #ff7f00;
+    margin: 0.4rem;
+    font-size: 1.05rem;
     font-weight: 400;
-    padding: 0.5rem 1rem;
-    border-radius: 20px;
+    padding: 0.6rem 1.2rem;
+    border-radius: 25px;
 }
-.project-card, .timeline-item {
-    background-color: #1e1e1e;
-    border-radius: 12px;
-    padding: 1.5rem;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+.card-custom {
+    background-color: #1a1a1a;
     border: 1px solid #333;
+    border-radius: 12px;
+    padding: 2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
 }
-.project-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 10px 20px rgba(0, 242, 96, 0.15);
+.card-custom:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(255, 127, 0, 0.25);
 }
 .timeline {
     position: relative;
-    padding-left: 2rem;
+    padding-left: 3rem;
 }
 .timeline::before {
     content: '';
     position: absolute;
     top: 0;
-    left: 0;
+    left: 15px;
     width: 2px;
     height: 100%;
-    background-color: #00f260;
+    background-color: #ff7f00;
 }
 .timeline-item {
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
     position: relative;
 }
 .timeline-item::before {
     content: '';
     position: absolute;
-    top: 1.5rem;
-    left: -2.1rem;
-    width: 15px;
-    height: 15px;
+    top: 0.5rem;
+    left: 6px;
+    width: 20px;
+    height: 20px;
     border-radius: 50%;
-    background-color: #00f260;
-    border: 2px solid #1e1e1e;
+    background-color: #ff7f00;
+    border: 4px solid #1a1a1a;
+    z-index: 1;
 }
 footer {
-    padding: 2.5rem 0;
+    padding: 3rem 0;
     text-align: center;
     color: #a0a0a0;
-    background-color: #1e1e1e;
+    background-color: #1a1a1a;
 }
 .contact-icons a {
-    font-size: 2rem;
-    margin: 0 15px;
-    color: #00f260;
-    transition: color 0.3s ease;
+    font-size: 2.2rem;
+    margin: 0 18px;
+    color: #ff7f00;
+    transition: color 0.3s ease, transform 0.3s ease;
 }
 .contact-icons a:hover {
     color: #fff;
+    transform: scale(1.1);
 }
 .text-muted {
     color: #a0a0a0 !important;
@@ -139,21 +143,25 @@ footer {
 </nav>
 
 <header class="hero-section">
-    <img src="https://via.placeholder.com/180/00f260/FFFFFF/?text=Naresh" alt="Naresh Photo">
+    <img src="https://via.placeholder.com/180/ff7f00/FFFFFF/?text=Naresh" alt="Naresh Photo">
     <h1>Naresh Ramesh Khanderay</h1>
     <p>Data Analyst | Big Data Specialist | Predictive Model Builder</p>
 </header>
 
 <main class="container py-5">
     <section id="about" class="mb-5">
-        <h2 class="section-title">About Me</h2>
+        <div class="text-center">
+            <h2 class="section-title">About Me</h2>
+        </div>
         <p class="lead text-center">
-            Entry-level Data Analyst skilled in **Python, R, SQL, Apache Spark, Hive, Hadoop**, **Power BI**, and **Tableau**. Experienced in **ETL pipelines, data cleaning, predictive modeling**, KPI reporting, and dashboard development. Delivered sales forecasting and sentiment analysis models with high accuracy using real-world datasets.
+            [cite_start]Entry-level Data Analyst with strong skills in statistics, big data analytics, SQL, Python, and R[cite: 4]. [cite_start]Experienced in ETL processes, data cleaning, predictive modeling, KPI reporting, and dashboard development[cite: 6]. [cite_start]Adept at delivering actionable business insights using tools like Power BI, Tableau, Apache Spark, and Hive[cite: 7]. [cite_start]Seeking to contribute analytical expertise to Amdocs' data-driven decision-making[cite: 8].
         </p>
     </section>
 
     <section id="skills" class="mb-5">
-        <h2 class="section-title">Skills</h2>
+        <div class="text-center">
+            <h2 class="section-title">Skills</h2>
+        </div>
         <div class="d-flex flex-wrap justify-content-center">
             <span class="badge badge-skill">Python</span>
             <span class="badge badge-skill">R</span>
@@ -171,49 +179,47 @@ footer {
     </section>
 
     <section id="projects" class="mb-5">
-        <h2 class="section-title">Projects</h2>
+        <div class="text-center">
+            <h2 class="section-title">Projects</h2>
+        </div>
         <div class="row g-4">
             <div class="col-md-6 col-lg-4">
-                <div class="project-card">
+                <div class="card-custom">
                     <h5 class="text-white">Olist E-Commerce Analysis</h5>
-                    <p class="text-muted">Analyzed 100k+ orders to identify sales patterns and delivery performance. Built forecasting and sentiment models with high accuracy.</p>
+                    [cite_start]<p class="text-muted">Analyzed over 100,000 e-commerce orders to identify sales patterns and delivery performance[cite: 14]. [cite_start]Built a sales prediction model with 85% accuracy using Spark, Hive, and Python[cite: 15].</p>
                 </div>
             </div>
             <div class="col-md-6 col-lg-4">
-                <div class="project-card">
-                    <h5 class="text-white">Hotel Booking Analysis</h5>
-                    <p class="text-muted">Performed EDA to reveal booking trends and cancellation patterns using Python, Pandas, and Seaborn.</p>
+                <div class="card-custom">
+                    <h5 class="text-white">Attitude of College Students Towards Entrepreneurship</h5>
+                    [cite_start]<p class="text-muted">Collected and analyzed survey data from 300+ students using SPSS and Excel[cite: 19]. [cite_start]Applied statistical modeling to identify key entrepreneurial motivators[cite: 20].</p>
                 </div>
             </div>
             <div class="col-md-6 col-lg-4">
-                <div class="project-card">
-                    <h5 class="text-white">Stock Market Analysis</h5>
-                    <p class="text-muted">Analyzed 5 years of data using R, detecting trends and seasonality for investment strategy.</p>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4">
-                <div class="project-card">
-                    <h5 class="text-white">Entrepreneurship Survey</h5>
-                    <p class="text-muted">Analyzed survey data from 300+ students using SPSS and Excel to identify key motivators.</p>
+                <div class="card-custom">
+                    <h5 class="text-white">Statistical Analysis of Stock Market</h5>
+                    [cite_start]<p class="text-muted">Evaluated 5 years of historical stock data using R[cite: 22]. [cite_start]Created visual analytics reports to identify trends, seasonal patterns, and correlations for investment strategies[cite: 22].</p>
                 </div>
             </div>
         </div>
     </section>
 
     <section id="education" class="mb-5">
-        <h2 class="section-title">Education</h2>
+        <div class="text-center">
+            <h2 class="section-title">Education</h2>
+        </div>
         <div class="timeline">
             <div class="timeline-item">
                 <h6 class="text-white">PG Diploma in Big Data Analytics</h6>
-                <p class="text-muted">2025 - CDAC Kharghar</p>
+                [cite_start]<p class="text-muted">2025 - Completed [cite: 9]</p>
             </div>
             <div class="timeline-item">
                 <h6 class="text-white">MSc in Statistics</h6>
-                <p class="text-muted">2024 - Z.B. Patil College, Dhule</p>
+                <p class="text-muted">2024 - Z.B. Patil College, Dhule | [cite_start]63.83% [cite: 10]</p>
             </div>
             <div class="timeline-item">
                 <h6 class="text-white">BSc in Statistics</h6>
-                <p class="text-muted">2022 - Z.B. Patil College, Dhule</p>
+                <p class="text-muted">2022 - Z.B. Patil College, Dhule | [cite_start]65.92% [cite: 11]</p>
             </div>
         </div>
     </section>
